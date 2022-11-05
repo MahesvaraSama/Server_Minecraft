@@ -8,7 +8,7 @@ services:
     - 25565:25565
     environment:
       EULA: "TRUE"
-      TYPE: FABRIC
+      TYPE: FORGE
       VERSION: 1.19.2
       FORGEVERSION: 43.1.34
       ENABLE_ROLLING_LOGS: "true"
@@ -21,7 +21,6 @@ services:
       VIEW_DISTANCE: "32"
       INIT_MEMORY: "2G"
       MAX_MEMORY: "4G"
-      #ICON: "https://cdn.discordapp.com/attachments/1020986021678157834/1029389926283882567/Nazarick.png"
     volumes:
     - ./data:/data
     - ./mods:/mods:ro
