@@ -3,18 +3,18 @@ version: "3.8"
 services:
   server_minecraft:
     image: itzg/minecraft-server:latest
-    container_name: "server_minecraft"
+    container_name: "server_minecraft_neoforge"
     ports:
     - 25565:25565
     environment:
       EULA: "TRUE"
-      TYPE: FORGE
-      VERSION: 1.19.2
-      FORGEVERSION: 43.1.47
+      TYPE: NEOFORGE
+      VERSION: 1.20.1
+      NEOFORGE_VERSION: 47.1.88
       ENABLE_ROLLING_LOGS: "true"
       DEBUG: "true"
       TZ: "Europe/Paris"
-      DIFFICULTY: "hard"
+      DIFFICULTY: "normal"
       MAX_PLAYERS: 10
       SERVER_NAME: "Nazarick-Kingdom"
       VIEW_DISTANCE: "32"
